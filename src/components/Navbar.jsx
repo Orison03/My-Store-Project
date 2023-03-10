@@ -5,7 +5,7 @@ import { useGlobalCustomHook } from '../context';
 const Navbar = () => {
     const {amount} = useGlobalCustomHook()
   return (
-    <nav className="font-family font-bold w-[85%] md:w-[60%] mx-auto mt-12 text-white flex justify-between items-center">
+    <nav className="font-family font-bold w-[90%] md:w-[60%] mx-auto mt-12 text-white flex justify-between items-center">
       {/* header title  */}
       <div>
         <h1 className="capitalize text-3xl tracking-wide font-black md:text-4xl">

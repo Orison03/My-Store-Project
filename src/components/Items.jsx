@@ -5,7 +5,7 @@ import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
 const Items = () => {
   const { cartData, total, clearCart, deleteItem, increaseItem, decreaseItem } = useGlobalCustomHook();
   return (
-    <main className="text-white w-[80%] mx-auto md:w-[60%] mb-12">
+    <main className="text-white w-[90%] mx-auto md:w-[60%] mb-12">
       <h1 className="capitalize font-bold text-2xl text-center md:text-left md:text-3xl mt-12 font-slant mb-12">
         your bag -{" "}
         <span className="font-family text-xs md:text-sm tracking-wide lowercase">
@@ -18,10 +18,10 @@ const Items = () => {
           return (
             <div
               key={id}
-              className="grid grid-cols-11 font-family font-bold gap-3 mb-8"
+              className="grid grid-cols-10 font-family font-bold gap-3 mb-8"
             >
               {/* image container */}
-              <div className="grid col-span-3 ">
+              <div className="grid col-span-2 ">
                 <img
                   src={image}
                   alt="title"
@@ -29,7 +29,7 @@ const Items = () => {
                 />
               </div>
               {/* details */}
-              <div className="grid col-span-7 ml-16">
+              <div className="grid col-span-7 ml-8">
                 <p className="text-xs md:text-sm">Your favorite - {title}</p>
                 <p className="text-sm mb-4 tracking-wider md:text-sm">
                   $ {price}
