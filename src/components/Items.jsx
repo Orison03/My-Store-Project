@@ -18,14 +18,14 @@ const Items = () => {
           return (
             <div
               key={id}
-              className="grid grid-cols-10 font-family font-bold gap-3 mb-8"
+              className="grid grid-cols-11 font-family font-bold gap-3 mb-8"
             >
               {/* image container */}
-              <div className="grid col-span-2 ">
+              <div className="grid col-span-3 ">
                 <img
                   src={image}
                   alt="title"
-                  className="w-[100%] h-20 md:h-24 cursor-pointer rounded-md object-cover"
+                  className="w-[200%] h-20 md:h-24 cursor-pointer rounded-md object-cover"
                 />
               </div>
               {/* details */}
@@ -42,7 +42,7 @@ const Items = () => {
                 </p>
               </div>
               {/* increase and decrease container */}
-              <section className="grid col-span-1 ml-10">
+              <section className="grid col-span-1">
                 <div className="flex flex-col justify-between items-center">
                   <button onClick={() => increaseItem(id)}>
                     <IoIosArrowUp className="cursor-pointer" />
