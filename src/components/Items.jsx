@@ -60,7 +60,7 @@ const Items = () => {
           );
         })}
       </div>
-      <footer className=" flex justify-between items-center border-top font-slant font-black my-16 border-t pt-4 w-[105%] md:w-[100%]">
+      <footer className=" flex justify-between items-center border-top font-slant font-black my-16 border-t pt-4 w-[100%] md:w-[100%]">
         <h1 className="text-3xl md:text-4xl capitalize tracking-wide">total</h1>
         <p className="text-lg capitalize tracking-wider">$ {total}</p>
       </footer>

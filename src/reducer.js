@@ -2,7 +2,7 @@ const reducer = (state, action) => {
 if(action.type === "CLEAR_CART"){
     return {...state, cartData : []}
 }
-
+``
 if(action.type === "DELETE_ITEM"){
     const newItems = state.cartData.filter((item) => {
         return item.id !== action.payload
@@ -23,6 +23,7 @@ if(action.type === "INCREASE_ITEM"){
 if(action.type === "DECREASE_ITEM"){
     const newItem = state.cartData.map((cartItem) => {
         if(cartItem.id === action.payload){
+            // updating the cartItem state object
             return {...cartItem, amount : cartItem.amount -1}
         }
         return cartItem
